@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H9I-Yv-myT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Guide View Controller-->
+        <scene sceneID="qI4-Jp-hCX">
+            <objects>
+                <viewController storyboardIdentifier="SIGuideViewController" id="XYT-w8-ghN" customClass="SIGuideViewController" customModule="AppLanding" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ymn-im-c0f"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Vl-K1-dJB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PKo-yG-tCc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Hew-pA-OIt">
+                                <rect key="frame" x="168" y="618" width="39" height="37"/>
+                            </pageControl>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="a2i-NY-vua">
+                                <rect key="frame" x="168" y="618" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.039215686270000001" green="0.078431372550000003" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.81960784310000001" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a2i-NY-vua" firstAttribute="centerY" secondItem="Hew-pA-OIt" secondAttribute="centerY" id="6BC-7o-f1q"/>
+                            <constraint firstItem="a2i-NY-vua" firstAttribute="centerX" secondItem="Hew-pA-OIt" secondAttribute="centerX" id="CmM-zV-M4c"/>
+                            <constraint firstItem="3Vl-K1-dJB" firstAttribute="top" secondItem="Hew-pA-OIt" secondAttribute="bottom" constant="12" id="jQf-Y1-3aL"/>
+                            <constraint firstAttribute="centerX" secondItem="Hew-pA-OIt" secondAttribute="centerX" id="siY-El-Phd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b7D-Vo-03l"/>
+                    </view>
+                    <connections>
+                        <outlet property="newPageControll" destination="a2i-NY-vua" id="zPJ-8h-bN3"/>
+                        <outlet property="pageControl" destination="Hew-pA-OIt" id="T6o-mq-yDJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FF8-92-Kjt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-679.20000000000005" y="-534.78260869565224"/>
+        </scene>
+        <!--First Guide View Controller-->
+        <scene sceneID="Byx-fE-KdJ">
+            <objects>
+                <viewController storyboardIdentifier="SIFirstGuideViewController" id="1xx-G6-IpN" customClass="SIFirstGuideViewController" customModule="AppLanding" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZEn-SM-vfq"/>
+                        <viewControllerLayoutGuide type="bottom" id="lUw-yc-9MQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wZ6-7V-UTd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CA" translatesAutoresizingMaskIntoConstraints="NO" id="nQT-fn-Qhq">
+                                <rect key="frame" x="20" y="50" width="335" height="400"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smm-ba-xsn">
+                                <rect key="frame" x="12" y="470" width="351" height="119"/>
+                                <string key="text">Captain America: The First Avenger is a 2011 American superhero film based on the Marvel Comics character Captain America. Produced by Marvel Studios and distributed by Paramount Pictures, it is the fifth film in the Marvel Cinematic Universe (MCU).</string>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.078431372550000003" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nQT-fn-Qhq" firstAttribute="top" secondItem="wZ6-7V-UTd" secondAttribute="topMargin" constant="30" id="DyU-MU-SxQ"/>
+                            <constraint firstItem="Smm-ba-xsn" firstAttribute="leading" secondItem="wZ6-7V-UTd" secondAttribute="leading" constant="12" id="GKF-hC-Ewk"/>
+                            <constraint firstItem="kR5-kX-MMq" firstAttribute="trailing" secondItem="Smm-ba-xsn" secondAttribute="trailing" constant="12" id="WCR-Rg-SuG"/>
+                            <constraint firstItem="nQT-fn-Qhq" firstAttribute="height" secondItem="wZ6-7V-UTd" secondAttribute="height" multiplier="1.8/3" id="fjq-jW-r0M"/>
+                            <constraint firstItem="nQT-fn-Qhq" firstAttribute="leading" secondItem="kR5-kX-MMq" secondAttribute="leading" constant="20" id="hF5-WT-r3u"/>
+                            <constraint firstItem="Smm-ba-xsn" firstAttribute="top" secondItem="nQT-fn-Qhq" secondAttribute="bottom" constant="20" id="kZw-8j-eRd"/>
+                            <constraint firstItem="kR5-kX-MMq" firstAttribute="trailing" secondItem="nQT-fn-Qhq" secondAttribute="trailing" constant="20" id="taN-Wt-boW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kR5-kX-MMq"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="nQT-fn-Qhq" id="Sg1-O8-p5n"/>
+                        <outlet property="lblMessage" destination="Smm-ba-xsn" id="aBN-Ml-hgC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FpO-R3-cWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="-535"/>
+        </scene>
+        <!--Second Guide View Controller-->
+        <scene sceneID="GTe-sp-KlI">
+            <objects>
+                <viewController storyboardIdentifier="SISecondGuideViewController" id="cl9-TD-Fth" customClass="SISecondGuideViewController" customModule="AppLanding" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NtN-8V-B3T"/>
+                        <viewControllerLayoutGuide type="bottom" id="XQQ-S9-98y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yZ2-b3-syU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ironman" translatesAutoresizingMaskIntoConstraints="NO" id="FXw-zN-kVr">
+                                <rect key="frame" x="20" y="50" width="335" height="400"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xm-Jo-k4f">
+                                <rect key="frame" x="12" y="470" width="351" height="99.5"/>
+                                <string key="text">Iron Man is a 2008 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Paramount Pictures, it is the first film in the Marvel Cinematic Universe.</string>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.078431372550000003" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Xm-Jo-k4f" firstAttribute="leading" secondItem="hut-NM-4sV" secondAttribute="leading" constant="12" id="9d1-MC-KBp"/>
+                            <constraint firstItem="hut-NM-4sV" firstAttribute="trailing" secondItem="FXw-zN-kVr" secondAttribute="trailing" constant="20" id="JwM-Pq-WfE"/>
+                            <constraint firstItem="1Xm-Jo-k4f" firstAttribute="top" secondItem="FXw-zN-kVr" secondAttribute="bottom" constant="20" id="YQG-RW-V4Z"/>
+                            <constraint firstItem="hut-NM-4sV" firstAttribute="trailing" secondItem="1Xm-Jo-k4f" secondAttribute="trailing" constant="12" id="bHq-af-DmK"/>
+                            <constraint firstItem="FXw-zN-kVr" firstAttribute="height" secondItem="yZ2-b3-syU" secondAttribute="height" multiplier="1.8/3" id="xdZ-Kj-TsD"/>
+                            <constraint firstItem="FXw-zN-kVr" firstAttribute="top" secondItem="NtN-8V-B3T" secondAttribute="bottom" constant="30" id="xrD-93-mn2"/>
+                            <constraint firstItem="FXw-zN-kVr" firstAttribute="leading" secondItem="hut-NM-4sV" secondAttribute="leading" constant="20" id="zOZ-RB-1Z1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hut-NM-4sV"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="FXw-zN-kVr" id="RDc-4O-ioD"/>
+                        <outlet property="lblMessage" destination="1Xm-Jo-k4f" id="DbN-Bd-I5m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dih-c8-iWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="-535"/>
+        </scene>
+        <!--Third Guide View Controller-->
+        <scene sceneID="Jbq-XB-ql7">
+            <objects>
+                <viewController storyboardIdentifier="SIThirdGuideViewController" id="Ybu-wU-Vg7" customClass="SIThirdGuideViewController" customModule="AppLanding" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XLH-uv-F05"/>
+                        <viewControllerLayoutGuide type="bottom" id="PdU-48-xDl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zM9-G3-BrH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thor" translatesAutoresizingMaskIntoConstraints="NO" id="guL-3d-ryD">
+                                <rect key="frame" x="20" y="50" width="335" height="400"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xa-yU-AM1">
+                                <rect key="frame" x="12" y="470" width="351" height="79.5"/>
+                                <string key="text">The son of Odin uses his abilities as the God of Thunder to protect Asgard and planet Earth alike. Learn about Thor on the official site of Marvel!</string>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.078431372550000003" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P1H-z5-oHJ" firstAttribute="trailing" secondItem="guL-3d-ryD" secondAttribute="trailing" constant="20" id="ETE-wx-Idj"/>
+                            <constraint firstItem="6Xa-yU-AM1" firstAttribute="leading" secondItem="P1H-z5-oHJ" secondAttribute="leading" constant="12" id="NV9-1x-2tE"/>
+                            <constraint firstItem="6Xa-yU-AM1" firstAttribute="top" secondItem="guL-3d-ryD" secondAttribute="bottom" constant="20" id="S5R-0Z-Eu3"/>
+                            <constraint firstItem="guL-3d-ryD" firstAttribute="top" secondItem="XLH-uv-F05" secondAttribute="bottom" constant="30" id="Scs-if-d8a"/>
+                            <constraint firstItem="guL-3d-ryD" firstAttribute="leading" secondItem="P1H-z5-oHJ" secondAttribute="leading" constant="20" id="pOw-if-zM9"/>
+                            <constraint firstItem="guL-3d-ryD" firstAttribute="height" secondItem="zM9-G3-BrH" secondAttribute="height" multiplier="1.8/3" id="w1d-ZV-NEd"/>
+                            <constraint firstAttribute="trailing" secondItem="6Xa-yU-AM1" secondAttribute="trailing" constant="12" id="wsq-Fx-48P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P1H-z5-oHJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="guL-3d-ryD" id="3kQ-w7-CLm"/>
+                        <outlet property="lblMessage" destination="6Xa-yU-AM1" id="zIL-7E-oM9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bV5-kb-lw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1406" y="-536"/>
+        </scene>
+        <!--App Landing View Controller-->
+        <scene sceneID="IRI-pK-jeN">
+            <objects>
+                <viewController storyboardIdentifier="SIAppLandingViewController" id="ndJ-SK-buW" customClass="SIAppLandingViewController" customModule="AppLanding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7gS-Ah-pRx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ccV-pE-Wdf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h5A-p9-Ydu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3h-Bs-FT5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1406" y="186"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lfB-MJ-mwg">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="H9I-Yv-myT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hXS-rT-gpY">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8YF-hy-wEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-679" y="164"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CA" width="1920" height="1080"/>
+        <image name="Thor" width="512" height="320"/>
+        <image name="ironman" width="1023" height="747"/>
+    </resources>
+</document>
